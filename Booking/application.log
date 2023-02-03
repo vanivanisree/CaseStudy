@@ -1,0 +1,1054 @@
+2023-02-03 00:04:00,699 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 10:59:58,646 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1218)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:638)
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:74)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:133)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2023-02-03 10:59:58,703 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1218)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:638)
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:74)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:133)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2023-02-03 10:59:58,832 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketException: No such host is known (ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: No such host is known (ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2023-02-03 10:59:58,642 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1218)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:638)
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:74)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:133)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2023-02-03 10:59:58,879 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketException: No such host is known (ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: No such host is known (ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2023-02-03 10:59:58,903 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketException: No such host is known (ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: No such host is known (ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2023-02-03 11:00:28,962 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 4 common frames omitted
+2023-02-03 11:00:28,962 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 4 common frames omitted
+2023-02-03 11:00:29,066 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 4 common frames omitted
+2023-02-03 11:01:17,879 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:40, serverValue:117782}] to ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:01:17,882 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=201586900, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000127, setVersion=6, topologyVersion=TopologyVersion{processId=63d963791fd01d7c63748894, counter=6}, lastWriteDate=Fri Feb 03 11:01:17 IST 2023, lastUpdateTimeNanos=1465430648684100}
+2023-02-03 11:01:17,883 INFO  SLF4JLogger:71 - [] Discovered replica set primary ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:01:17,910 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:38, serverValue:113138}] to ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+2023-02-03 11:01:17,911 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=208262500, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63d9622d7143031ff6ec50a6, counter=4}, lastWriteDate=Fri Feb 03 11:01:17 IST 2023, lastUpdateTimeNanos=1465430679378500}
+2023-02-03 11:01:17,951 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:39, serverValue:111877}] to ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+2023-02-03 11:01:17,952 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=235259600, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63d9648db30c0cbe87479630, counter=3}, lastWriteDate=Fri Feb 03 11:01:17 IST 2023, lastUpdateTimeNanos=1465430721155300}
+2023-02-03 11:01:18,830 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1218)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:638)
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:74)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:133)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2023-02-03 11:01:18,840 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1218)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:638)
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:74)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:133)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2023-02-03 11:01:18,844 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 4 common frames omitted
+2023-02-03 11:01:18,849 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1218)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:638)
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:74)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:133)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2023-02-03 11:01:18,910 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 4 common frames omitted
+2023-02-03 11:01:18,916 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 4 common frames omitted
+2023-02-03 11:01:26,908 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:44, serverValue:117875}] to ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:01:27,242 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:46, serverValue:113156}] to ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+2023-02-03 11:01:27,265 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:45, serverValue:111886}] to ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+2023-02-03 11:01:29,240 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:49, serverValue:117755}] to ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:01:29,241 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=78725200, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000127, setVersion=6, topologyVersion=TopologyVersion{processId=63d963791fd01d7c63748894, counter=6}, lastWriteDate=Fri Feb 03 11:01:29 IST 2023, lastUpdateTimeNanos=1465442010468200}
+2023-02-03 11:01:29,245 INFO  SLF4JLogger:71 - [] Discovered replica set primary ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:01:29,247 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:48, serverValue:113155}] to ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+2023-02-03 11:01:29,247 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=86139100, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63d9622d7143031ff6ec50a6, counter=4}, lastWriteDate=Fri Feb 03 11:01:29 IST 2023, lastUpdateTimeNanos=1465442016648600}
+2023-02-03 11:01:29,265 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:47, serverValue:111889}] to ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+2023-02-03 11:01:29,266 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=380728600, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63d9648db30c0cbe87479630, counter=3}, lastWriteDate=Fri Feb 03 11:01:29 IST 2023, lastUpdateTimeNanos=1465442034714500}
+2023-02-03 11:02:19,057 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 11:05:33,204 INFO  StartupInfoLogger:55 - [] Starting BookingApplication using Java 17.0.5 on lin80026596 with PID 33492 (C:\Users\vdubbama\Downloads\Online-Railway-Reservation-System-CaseStudy-master\Backend\Booking\target\classes started by vdubbama in C:\Users\vdubbama\Downloads\Online-Railway-Reservation-System-CaseStudy-master\Backend\Booking)
+2023-02-03 11:05:33,208 INFO  SpringApplication:640 - [] No active profile set, falling back to 1 default profile: "default"
+2023-02-03 11:05:33,282 INFO  DeferredLog:255 - [] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-03 11:05:33,283 INFO  DeferredLog:255 - [] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-03 11:05:34,369 INFO  RepositoryConfigurationDelegate:132 - [] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-02-03 11:05:34,514 INFO  RepositoryConfigurationDelegate:201 - [] Finished Spring Data repository scanning in 137 ms. Found 1 MongoDB repository interfaces.
+2023-02-03 11:05:34,843 INFO  GenericScope:283 - [] BeanFactory id=57393b4c-538b-3c47-8631-3e25121c76e1
+2023-02-03 11:05:35,575 INFO  TomcatWebServer:108 - [] Tomcat initialized with port(s): 8086 (http)
+2023-02-03 11:05:35,584 INFO  DirectJDKLog:173 - [] Starting service [Tomcat]
+2023-02-03 11:05:35,585 INFO  DirectJDKLog:173 - [] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-02-03 11:05:35,729 INFO  DirectJDKLog:173 - [] Initializing Spring embedded WebApplicationContext
+2023-02-03 11:05:35,730 INFO  ServletWebServerApplicationContext:290 - [] Root WebApplicationContext: initialization completed in 2446 ms
+2023-02-03 11:05:35,983 INFO  SLF4JLogger:71 - [] Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.8i1c6xr.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-un03pj-shard-0'}
+2023-02-03 11:05:36,004 INFO  SLF4JLogger:71 - [] Adding discovered server ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017 to client view of cluster
+2023-02-03 11:05:36,055 INFO  SLF4JLogger:71 - [] Adding discovered server ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017 to client view of cluster
+2023-02-03 11:05:36,058 INFO  SLF4JLogger:71 - [] Adding discovered server ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017 to client view of cluster
+2023-02-03 11:05:36,125 WARN  CustomConversions:261 - [] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-02-03 11:05:36,284 WARN  OptionalLiveReloadServer:61 - [] Unable to start LiveReload server
+2023-02-03 11:05:36,379 WARN  CustomConversions:261 - [] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-02-03 11:05:36,750 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:1, serverValue:113226}] to ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+2023-02-03 11:05:36,750 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:4, serverValue:117953}] to ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:05:36,750 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:6, serverValue:111953}] to ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+2023-02-03 11:05:36,750 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:5, serverValue:117953}] to ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:05:36,750 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:3, serverValue:113226}] to ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+2023-02-03 11:05:36,751 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=258233300, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000127, setVersion=6, topologyVersion=TopologyVersion{processId=63d963791fd01d7c63748894, counter=6}, lastWriteDate=Fri Feb 03 11:05:36 IST 2023, lastUpdateTimeNanos=1465689452899800}
+2023-02-03 11:05:36,750 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:2, serverValue:111953}] to ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+2023-02-03 11:05:36,751 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=232534400, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63d9648db30c0cbe87479630, counter=3}, lastWriteDate=Fri Feb 03 11:05:36 IST 2023, lastUpdateTimeNanos=1465689453073000}
+2023-02-03 11:05:36,751 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=258233400, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63d9622d7143031ff6ec50a6, counter=4}, lastWriteDate=Fri Feb 03 11:05:36 IST 2023, lastUpdateTimeNanos=1465689452900600}
+2023-02-03 11:05:36,757 INFO  SLF4JLogger:71 - [] Setting max election id to 7fffffff0000000000000127 from replica set primary ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:05:36,758 INFO  SLF4JLogger:71 - [] Setting max set version to 6 from replica set primary ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:05:36,759 INFO  SLF4JLogger:71 - [] Discovered replica set primary ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:05:38,399 INFO  DiscoveryClientOptionalArgsConfiguration:68 - [] Eureka HTTP Client uses RestTemplate.
+2023-02-03 11:05:38,675 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 - [] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-02-03 11:05:38,708 INFO  InstanceInfoFactory:67 - [] Setting initial instance status as: STARTING
+2023-02-03 11:05:38,818 INFO  DiscoveryClient:372 - [] Initializing Eureka in region us-east-1
+2023-02-03 11:05:38,828 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 11:05:38,866 INFO  DiscoveryClient:1007 - [] Disable delta property : false
+2023-02-03 11:05:38,867 INFO  DiscoveryClient:1008 - [] Single vip registry refresh property : null
+2023-02-03 11:05:38,868 INFO  DiscoveryClient:1009 - [] Force full registry fetch : false
+2023-02-03 11:05:38,868 INFO  DiscoveryClient:1010 - [] Application is null : false
+2023-02-03 11:05:38,869 INFO  DiscoveryClient:1011 - [] Registered Applications size is zero : true
+2023-02-03 11:05:38,869 INFO  DiscoveryClient:1013 - [] Application version is -1: true
+2023-02-03 11:05:38,870 INFO  DiscoveryClient:1097 - [] Getting all instance registry info from the eureka server
+2023-02-03 11:05:39,282 INFO  DiscoveryClient:1106 - [] The response status is 200
+2023-02-03 11:05:39,286 INFO  DiscoveryClient:1321 - [] Starting heartbeat executor: renew interval is: 30
+2023-02-03 11:05:39,292 INFO  InstanceInfoReplicator:60 - [] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-02-03 11:05:39,300 INFO  DiscoveryClient:492 - [] Discovery Client initialized at timestamp 1675402539299 with initial instances count: 2
+2023-02-03 11:05:39,302 INFO  EurekaServiceRegistry:41 - [] Registering application BOOKINGDETAILS with eureka with status UP
+2023-02-03 11:05:39,304 INFO  DiscoveryClient$3:1352 - [] Saw local status change event StatusChangeEvent [timestamp=1675402539304, current=UP, previous=STARTING]
+2023-02-03 11:05:39,307 INFO  DiscoveryClient:873 - [] DiscoveryClient_BOOKINGDETAILS/lin80026596.corp.capgemini.com:BookingDetails:8086: registering service...
+2023-02-03 11:05:39,358 INFO  TomcatWebServer:220 - [] Tomcat started on port(s): 8086 (http) with context path ''
+2023-02-03 11:05:39,359 INFO  EurekaAutoServiceRegistration:144 - [] Updating port to 8086
+2023-02-03 11:05:39,377 INFO  DiscoveryClient:882 - [] DiscoveryClient_BOOKINGDETAILS/lin80026596.corp.capgemini.com:BookingDetails:8086 - registration status: 204
+2023-02-03 11:05:39,540 INFO  StartupInfoLogger:61 - [] Started BookingApplication in 6.971 seconds (JVM running for 7.909)
+2023-02-03 11:10:38,906 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 11:12:09,051 INFO  DirectJDKLog:173 - [] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-03 11:12:09,052 INFO  FrameworkServlet:525 - [] Initializing Servlet 'dispatcherServlet'
+2023-02-03 11:12:09,069 INFO  FrameworkServlet:547 - [] Completed initialization in 17 ms
+2023-02-03 11:12:56,594 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:7, serverValue:118167}] to ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:12:56,670 INFO  BookingController:42 - [] [bookticket/id/fare] info message added
+2023-02-03 11:12:56,671 DEBUG BookingController:43 - [] [bookticket/id/fare] debug message added
+2023-02-03 11:13:06,532 INFO  BookingController:42 - [] [bookticket/id/fare] info message added
+2023-02-03 11:13:06,534 DEBUG BookingController:43 - [] [bookticket/id/fare] debug message added
+2023-02-03 11:15:38,916 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 11:16:46,473 INFO  BookingController:42 - [] [bookticket/id/fare] info message added
+2023-02-03 11:16:46,475 DEBUG BookingController:43 - [] [bookticket/id/fare] debug message added
+2023-02-03 11:17:38,830 INFO  BookingController:42 - [] [bookticket/id/fare] info message added
+2023-02-03 11:17:38,832 DEBUG BookingController:43 - [] [bookticket/id/fare] debug message added
+2023-02-03 11:18:13,695 INFO  BookingController:42 - [] [bookticket/id/fare] info message added
+2023-02-03 11:18:13,695 DEBUG BookingController:43 - [] [bookticket/id/fare] debug message added
+2023-02-03 11:20:38,921 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 11:25:38,928 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 11:26:55,039 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1218)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:638)
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:74)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:133)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2023-02-03 11:26:55,064 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1218)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:638)
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:74)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:133)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2023-02-03 11:26:55,093 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1218)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:638)
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:74)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:133)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2023-02-03 11:26:55,104 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketException: No such host is known (ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: No such host is known (ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2023-02-03 11:26:55,109 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketException: No such host is known (ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: No such host is known (ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2023-02-03 11:26:55,127 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketException: No such host is known (ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: No such host is known (ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2023-02-03 11:27:05,126 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketException: ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2023-02-03 11:27:05,523 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:11, serverValue:113749}] to ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+2023-02-03 11:27:05,524 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=185248100, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63d9622d7143031ff6ec50a6, counter=4}, lastWriteDate=Fri Feb 03 11:27:05 IST 2023, lastUpdateTimeNanos=1466978202343500}
+2023-02-03 11:27:06,243 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:13, serverValue:112469}] to ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+2023-02-03 11:27:06,244 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=177837000, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63d9648db30c0cbe87479630, counter=3}, lastWriteDate=Fri Feb 03 11:27:06 IST 2023, lastUpdateTimeNanos=1466978922222500}
+2023-02-03 11:27:09,395 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:14, serverValue:112476}] to ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+2023-02-03 11:27:09,505 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:15, serverValue:118493}] to ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:27:12,823 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:16, serverValue:113755}] to ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+2023-02-03 11:27:15,351 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:17, serverValue:118475}] to ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:27:15,352 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=154988300, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000127, setVersion=6, topologyVersion=TopologyVersion{processId=63d963791fd01d7c63748894, counter=6}, lastWriteDate=Fri Feb 03 11:27:15 IST 2023, lastUpdateTimeNanos=1466988029984500}
+2023-02-03 11:27:15,354 INFO  SLF4JLogger:71 - [] Discovered replica set primary ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:30:38,947 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 11:35:38,957 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 11:37:10,434 INFO  RedirectingEurekaHttpClient:93 - [] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on PUT request for "http://localhost:8761/eureka/apps/BOOKINGDETAILS/lin80026596.corp.capgemini.com:BookingDetails:8086": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8761/eureka/apps/BOOKINGDETAILS/lin80026596.corp.capgemini.com:BookingDetails:8086": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 19 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 32 more
+
+2023-02-03 11:37:10,434 INFO  RedirectingEurekaHttpClient:93 - [] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
+
+2023-02-03 11:37:10,434 WARN  RetryableEurekaHttpClient:130 - [] Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2023-02-03 11:37:10,434 WARN  RetryableEurekaHttpClient:130 - [] Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/BOOKINGDETAILS/lin80026596.corp.capgemini.com:BookingDetails:8086": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2023-02-03 11:37:10,452 INFO  RedirectingEurekaHttpClient:84 - [] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on PUT request for "http://localhost:8761/eureka/apps/BOOKINGDETAILS/lin80026596.corp.capgemini.com:BookingDetails:8086": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8761/eureka/apps/BOOKINGDETAILS/lin80026596.corp.capgemini.com:BookingDetails:8086": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 20 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 33 more
+
+2023-02-03 11:37:10,452 WARN  RetryableEurekaHttpClient:130 - [] Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/BOOKINGDETAILS/lin80026596.corp.capgemini.com:BookingDetails:8086": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2023-02-03 11:37:10,455 INFO  RedirectingEurekaHttpClient:84 - [] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 23 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 36 more
+
+2023-02-03 11:37:10,456 WARN  RetryableEurekaHttpClient:130 - [] Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2023-02-03 11:37:10,457 ERROR DiscoveryClient:907 - [] DiscoveryClient_BOOKINGDETAILS/lin80026596.corp.capgemini.com:BookingDetails:8086 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-03 11:37:10,457 INFO  DiscoveryClient:1021 - [] DiscoveryClient_BOOKINGDETAILS/lin80026596.corp.capgemini.com:BookingDetails:8086 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-02-03 11:38:29,791 INFO  StartupInfoLogger:55 - [] Starting BookingApplication using Java 17.0.5 on lin80026596 with PID 6652 (C:\Users\vdubbama\Downloads\Online-Railway-Reservation-System-CaseStudy-master\Backend\Booking\target\classes started by vdubbama in C:\Users\vdubbama\Downloads\Online-Railway-Reservation-System-CaseStudy-master\Backend\Booking)
+2023-02-03 11:38:29,793 INFO  SpringApplication:640 - [] No active profile set, falling back to 1 default profile: "default"
+2023-02-03 11:38:29,867 INFO  DeferredLog:255 - [] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-03 11:38:29,867 INFO  DeferredLog:255 - [] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-03 11:38:30,739 INFO  RepositoryConfigurationDelegate:132 - [] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-02-03 11:38:30,888 INFO  RepositoryConfigurationDelegate:201 - [] Finished Spring Data repository scanning in 143 ms. Found 1 MongoDB repository interfaces.
+2023-02-03 11:38:31,222 INFO  GenericScope:283 - [] BeanFactory id=57393b4c-538b-3c47-8631-3e25121c76e1
+2023-02-03 11:38:32,249 INFO  TomcatWebServer:108 - [] Tomcat initialized with port(s): 8086 (http)
+2023-02-03 11:38:32,264 INFO  DirectJDKLog:173 - [] Starting service [Tomcat]
+2023-02-03 11:38:32,266 INFO  DirectJDKLog:173 - [] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-02-03 11:38:32,464 INFO  DirectJDKLog:173 - [] Initializing Spring embedded WebApplicationContext
+2023-02-03 11:38:32,465 INFO  ServletWebServerApplicationContext:290 - [] Root WebApplicationContext: initialization completed in 2597 ms
+2023-02-03 11:38:32,831 INFO  SLF4JLogger:71 - [] Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.8i1c6xr.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-un03pj-shard-0'}
+2023-02-03 11:38:32,974 WARN  CustomConversions:261 - [] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-02-03 11:38:33,133 WARN  OptionalLiveReloadServer:61 - [] Unable to start LiveReload server
+2023-02-03 11:38:33,247 WARN  CustomConversions:261 - [] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-02-03 11:38:34,194 INFO  SLF4JLogger:71 - [] Adding discovered server ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017 to client view of cluster
+2023-02-03 11:38:34,262 INFO  SLF4JLogger:71 - [] Adding discovered server ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017 to client view of cluster
+2023-02-03 11:38:34,265 INFO  SLF4JLogger:71 - [] Adding discovered server ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017 to client view of cluster
+2023-02-03 11:38:35,525 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:6, serverValue:112767}] to ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+2023-02-03 11:38:35,527 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:4, serverValue:118765}] to ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:38:35,528 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:5, serverValue:114039}] to ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+2023-02-03 11:38:35,528 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=628710300, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000127, setVersion=6, topologyVersion=TopologyVersion{processId=63d963791fd01d7c63748894, counter=6}, lastWriteDate=Fri Feb 03 11:38:35 IST 2023, lastUpdateTimeNanos=1467668164158500}
+2023-02-03 11:38:35,529 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=634225100, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63d9622d7143031ff6ec50a6, counter=4}, lastWriteDate=Fri Feb 03 11:38:35 IST 2023, lastUpdateTimeNanos=1467668169675900}
+2023-02-03 11:38:35,529 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:1, serverValue:114039}] to ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+2023-02-03 11:38:35,530 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:3, serverValue:112767}] to ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+2023-02-03 11:38:35,532 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=623291900, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63d9648db30c0cbe87479630, counter=3}, lastWriteDate=Fri Feb 03 11:38:35 IST 2023, lastUpdateTimeNanos=1467668164998400}
+2023-02-03 11:38:35,529 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:2, serverValue:118765}] to ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:38:35,540 INFO  SLF4JLogger:71 - [] Setting max election id to 7fffffff0000000000000127 from replica set primary ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:38:35,544 INFO  SLF4JLogger:71 - [] Setting max set version to 6 from replica set primary ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:38:35,544 INFO  SLF4JLogger:71 - [] Discovered replica set primary ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:38:36,592 INFO  DiscoveryClientOptionalArgsConfiguration:68 - [] Eureka HTTP Client uses RestTemplate.
+2023-02-03 11:38:37,074 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 - [] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-02-03 11:38:37,131 INFO  InstanceInfoFactory:67 - [] Setting initial instance status as: STARTING
+2023-02-03 11:38:37,358 INFO  DiscoveryClient:372 - [] Initializing Eureka in region us-east-1
+2023-02-03 11:38:37,373 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 11:38:37,436 INFO  DiscoveryClient:1007 - [] Disable delta property : false
+2023-02-03 11:38:37,437 INFO  DiscoveryClient:1008 - [] Single vip registry refresh property : null
+2023-02-03 11:38:37,438 INFO  DiscoveryClient:1009 - [] Force full registry fetch : false
+2023-02-03 11:38:37,438 INFO  DiscoveryClient:1010 - [] Application is null : false
+2023-02-03 11:38:37,439 INFO  DiscoveryClient:1011 - [] Registered Applications size is zero : true
+2023-02-03 11:38:37,440 INFO  DiscoveryClient:1013 - [] Application version is -1: true
+2023-02-03 11:38:37,441 INFO  DiscoveryClient:1097 - [] Getting all instance registry info from the eureka server
+2023-02-03 11:38:38,114 INFO  DiscoveryClient:1106 - [] The response status is 200
+2023-02-03 11:38:38,124 INFO  DiscoveryClient:1321 - [] Starting heartbeat executor: renew interval is: 30
+2023-02-03 11:38:38,132 INFO  InstanceInfoReplicator:60 - [] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-02-03 11:38:38,146 INFO  DiscoveryClient:492 - [] Discovery Client initialized at timestamp 1675404518144 with initial instances count: 2
+2023-02-03 11:38:38,149 INFO  EurekaServiceRegistry:41 - [] Registering application BOOKINGDETAILS with eureka with status UP
+2023-02-03 11:38:38,154 INFO  DiscoveryClient$3:1352 - [] Saw local status change event StatusChangeEvent [timestamp=1675404518154, current=UP, previous=STARTING]
+2023-02-03 11:38:38,167 INFO  DiscoveryClient:873 - [] DiscoveryClient_BOOKINGDETAILS/lin80026596.corp.capgemini.com:BookingDetails:8086: registering service...
+2023-02-03 11:38:38,233 INFO  TomcatWebServer:220 - [] Tomcat started on port(s): 8086 (http) with context path ''
+2023-02-03 11:38:38,235 INFO  EurekaAutoServiceRegistration:144 - [] Updating port to 8086
+2023-02-03 11:38:38,278 INFO  DiscoveryClient:882 - [] DiscoveryClient_BOOKINGDETAILS/lin80026596.corp.capgemini.com:BookingDetails:8086 - registration status: 204
+2023-02-03 11:38:38,585 INFO  StartupInfoLogger:61 - [] Started BookingApplication in 9.487 seconds (JVM running for 10.344)
+2023-02-03 11:41:40,268 INFO  DirectJDKLog:173 - [] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-03 11:41:40,269 INFO  FrameworkServlet:525 - [] Initializing Servlet 'dispatcherServlet'
+2023-02-03 11:41:40,274 INFO  FrameworkServlet:547 - [] Completed initialization in 4 ms
+2023-02-03 11:41:40,331 INFO  BookingController:79 - [] [getorder/id] info message added
+2023-02-03 11:41:40,332 DEBUG BookingController:80 - [] [getorder/id] debug message added
+2023-02-03 11:41:40,840 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:7, serverValue:118804}] to ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:45:20,755 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:701)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1460)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1064)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2023-02-03 11:45:20,755 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:701)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1460)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1064)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2023-02-03 11:45:20,767 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:701)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1460)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1064)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2023-02-03 11:45:21,117 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:10, serverValue:112901}] to ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+2023-02-03 11:45:21,120 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=178336200, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63d9648db30c0cbe87479630, counter=3}, lastWriteDate=Fri Feb 03 11:45:21 IST 2023, lastUpdateTimeNanos=1468073718913200}
+2023-02-03 11:45:21,124 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:9, serverValue:118873}] to ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:45:21,126 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=149103000, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000127, setVersion=6, topologyVersion=TopologyVersion{processId=63d963791fd01d7c63748894, counter=6}, lastWriteDate=Fri Feb 03 11:45:21 IST 2023, lastUpdateTimeNanos=1468073725495600}
+2023-02-03 11:45:21,127 INFO  SLF4JLogger:71 - [] Discovered replica set primary ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 11:45:21,132 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:8, serverValue:114186}] to ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+2023-02-03 11:45:21,133 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=138976000, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63d9622d7143031ff6ec50a6, counter=4}, lastWriteDate=Fri Feb 03 11:45:21 IST 2023, lastUpdateTimeNanos=1468073733344000}
+2023-02-03 11:46:05,940 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 11:51:05,947 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 11:56:05,986 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 12:01:05,992 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 12:06:06,015 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 12:11:06,022 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 12:16:06,038 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 12:21:06,054 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 12:26:06,073 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 12:29:27,233 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:701)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1460)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1064)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2023-02-03 12:29:27,235 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:701)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1460)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1064)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2023-02-03 12:29:27,546 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:12, serverValue:119809}] to ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 12:29:27,548 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=187142100, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000127, setVersion=6, topologyVersion=TopologyVersion{processId=63d963791fd01d7c63748894, counter=6}, lastWriteDate=Fri Feb 03 12:29:27 IST 2023, lastUpdateTimeNanos=1470720114594600}
+2023-02-03 12:29:27,549 INFO  SLF4JLogger:71 - [] Discovered replica set primary ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 12:29:27,701 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:11, serverValue:115096}] to ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+2023-02-03 12:29:27,702 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=115088100, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63d9622d7143031ff6ec50a6, counter=4}, lastWriteDate=Fri Feb 03 12:29:27 IST 2023, lastUpdateTimeNanos=1470720268749900}
+2023-02-03 12:29:45,944 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1218)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:638)
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:74)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:133)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2023-02-03 12:29:45,945 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1218)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:638)
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:74)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:133)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2023-02-03 12:29:45,947 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1218)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:638)
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:74)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:133)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2023-02-03 12:29:45,957 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 4 common frames omitted
+2023-02-03 12:29:45,966 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 4 common frames omitted
+2023-02-03 12:29:45,994 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+com.mongodb.MongoSocketException: No such host is known (ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: No such host is known (ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2023-02-03 12:29:56,041 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:17, serverValue:115131}] to ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+2023-02-03 12:29:56,069 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:16, serverValue:119884}] to ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 12:29:56,092 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:20, serverValue:115131}] to ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017
+2023-02-03 12:29:56,093 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=74753100, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63d9622d7143031ff6ec50a6, counter=4}, lastWriteDate=Fri Feb 03 12:29:56 IST 2023, lastUpdateTimeNanos=1470748660627100}
+2023-02-03 12:29:56,138 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:19, serverValue:119795}] to ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 12:29:56,139 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=120521200, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000127, setVersion=6, topologyVersion=TopologyVersion{processId=63d963791fd01d7c63748894, counter=6}, lastWriteDate=Fri Feb 03 12:29:56 IST 2023, lastUpdateTimeNanos=1470748706277900}
+2023-02-03 12:29:56,139 INFO  SLF4JLogger:71 - [] Discovered replica set primary ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017
+2023-02-03 12:29:56,510 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:21, serverValue:113857}] to ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+2023-02-03 12:29:56,510 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=269146900, setName='atlas-un03pj-shard-0', canonicalAddress=ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017, hosts=[ac-ptgxnae-shard-00-00.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017, ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ptgxnae-shard-00-02.8i1c6xr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63d9648db30c0cbe87479630, counter=3}, lastWriteDate=Fri Feb 03 12:29:56 IST 2023, lastUpdateTimeNanos=1470749078260200}
+2023-02-03 12:30:06,047 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:22, serverValue:113868}] to ac-ptgxnae-shard-00-01.8i1c6xr.mongodb.net:27017
+2023-02-03 12:33:13,520 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-02-03 12:38:13,493 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
